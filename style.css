@@ -98,14 +98,14 @@ a{
     padding: 10px;
 }
 
-.card a{
+/* .card a{
     background-color: black;
     color:white;
     padding: 15px 20px;
     display:block;
     text-align: center;
     margin: 20px 50px;
-}
+} */
 
 .address{
     background-color: grey;
