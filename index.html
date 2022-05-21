@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono&display=swap" rel="stylesheet">
     <title>Girl's Trip</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -30,35 +34,64 @@
         </nav>
     </header>
 
+
     <img src="pics/golden_gate.jpg" alt="" style="width:100%; height:auto; border-radius: 8px;">
-    
+
+<!-- Icons -->
+    <div class="socials">
+        <div class="spotify-container">
+            <a href="https://open.spotify.com/playlist/40wOKevWxO2COXlXfblKKp?si=94f0090c8a7c4de1" target="_blank">
+                <div class="spotify-icon"></div>
+            </a>
+        </div>
+        
+    </div>
+
     <div class="title">Explore</div>
 
-    <section class="container">
-        <div class="card">
-            <a href="https://www.goldengate.org/" target="_blank">
-                <div class="card-image golden_gate"></div>
-            </a>
-            <h2>Golden Gate</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam velit totam inventore similique quasi nulla explicabo dolor omnis alias laborum.</p>
+<!-- Start of tiles -->
+
+    <details>
+        <summary>San Francisco</summary>
+        <div class="details-content">
+            <section class="container">
+                <div class="card">
+                    <a href="https://www.goldengate.org/" target="_blank">
+                        <div class="card-image golden_gate"></div>
+                    </a>
+                    <h2>Golden Gate</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam velit totam inventore similique quasi nulla explicabo dolor omnis alias laborum.</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.fishermanswharf.org/" target="_blank">
+                        <div class="card-image fisherman_wharf"></div>
+                    </a>
+                        <h2>Fisherman's Wharf</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, molestiae?</p>
+                    
+                </div>
+                <div class="card">
+                    <a href="https://www.calacademy.org/" target="_blank">
+                        <div class="card-image ca_science"></div>
+                    </a>
+                    <h2>California Academy of Sciences</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sint blanditiis esse vel, ducimus voluptatem?</p>
+                    
+                </div>
+            </section>
         </div>
-        <div class="card">
-            <a href="https://www.fishermanswharf.org/" target="_blank">
-                <div class="card-image fisherman_wharf"></div>
-            </a>
-                <h2>Fisherman's Wharf</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, molestiae?</p>
-            
+    </details>
+
+    <hr style="margin: 1rem 0.5rem;">
+
+    <details>
+        <summary>Sacramento</summary>
+        <div class="details-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, modi consequuntur. Laudantium, dolorem dolores rem aperiam temporibus quos cumque eum.</p>
         </div>
-        <div class="card">
-            <a href="https://www.calacademy.org/">
-                <div class="card-image ca_science"></div>
-            </a>
-            <h2>California Academy of Sciences</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sint blanditiis esse vel, ducimus voluptatem?</p>
-            
-        </div>
-    </section>
+    </details>
+
+    
     
     <script src="script.js"></script>
     
