@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 16px;
+}
+
 body{
     background: rgb(27, 27, 27);
+    font-family: "Roboto", san-serif;
 }
 
 header{
@@ -67,9 +72,51 @@ a{
 
 .title{
     text-align: center;
-    font-size: 40px;
+    font-size: 2rem;
     padding-top: 20px;
+    padding-bottom: 2rem;
     color:aliceblue;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.spotify-icon{
+    content: url("pics/spotify.png");
+    height: 20px;
+    justify-content: center;
+}
+
+summary{
+    color:white;
+}
+
+details{
+    padding: 0 1rem;
+}
+
+details > summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+details > summary::after{
+    content: url(./pics/right-arrow.png);
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-flex;
+    transition: transform 0.3s ease;
+}
+
+details[open] > summary::after{
+    transform:rotate(90deg);
 }
 
 .container{
@@ -98,14 +145,6 @@ a{
     padding: 10px;
 }
 
-/* .card a{
-    background-color: black;
-    color:white;
-    padding: 15px 20px;
-    display:block;
-    text-align: center;
-    margin: 20px 50px;
-} */
 
 .address{
     background-color: grey;
