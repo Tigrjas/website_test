@@ -13,17 +13,23 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 
 // Grab Users location
 
-var myLocation = [];
+var userLocation = [];
 navigator.geolocation.getCurrentPosition(function(position) {
    var lat = position.coords.latitude;
    var lon = position.coords.longitude;
-   myLocation.push(lat, lon); 
+   userLocation.push(lat, lon); 
    locationCode()  
 });
 
 function locationCode() {
-   console.log(myLocation) 
+    localStorage.setItem("tempLocation", userLocation);
+    console.log(userLocation);
 }
+
+let tempLocation = localStorage.getItem("tempLocation");
+let tempLat, tempLong, myLocation;
+[tempLat, tempLong] = tempLocation.split(',');
+myLocation = [Number(tempLat), Number(tempLong)];
 
 // This is where we put all the locations 
 
@@ -84,9 +90,10 @@ let Journey_To_The_Dumpling = {
     directions: "https://goo.gl/maps/Xdf2b7EqDCoxErCv5"
 }
 
+
 // List of all the places
 
-locations = [Marufuku, De_Young_Museum,]
+locations = [Marufuku, De_Young_Museum, Golden_Gate_Park, California_Academy_Of_Science, Alcatraz_Island, The_Wave_Organ,China_Beach,Muir_Woods, Old_Sacramento, Journey_To_The_Dumpling]
 
 
 // Functions to check what is nearby and to update DOM
@@ -126,7 +133,6 @@ for (let i = 0; i < locations.length; i++){
         nearBy.push([distance, locations[i].name, locations[i].directions])
     }
 }
-
 
 for (let i = 0; i < nearBy.length; i++) {
     // location name for id
