@@ -204,6 +204,11 @@ details[open] > summary::after{
 #Journey_To_The_Dumpling{
     background-image: url("pics/Journey_To_The_Dumpling.jpg")
 }
+
+/* test */
+#Home_Depot{
+    background-image: url("pics/Home_Depot.jpg")
+}
 .janice{
     background-image: url("pics/janice.jpg");
     height: 300px;
